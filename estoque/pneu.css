@@ -1,0 +1,123 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo do título */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Lista de navegação */
+li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo para rótulos e inputs */
+label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Remove setas em navegadores Firefox */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Estilo do botão de envio */
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    input, select {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

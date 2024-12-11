@@ -1,0 +1,127 @@
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+/* Estilo para o menu de navegação */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Estilo para a tabela */
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o gráfico */
+canvas {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    table th, table td {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
